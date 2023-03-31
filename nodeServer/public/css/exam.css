@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body {
+    /* cornflowerblue */
+    background-color: lightblue;
+}
+#webcam {
+    position: relative;
+    top: 6px;
+    border: 1px solid black;
+    border-radius: 90px;
+    right: -15px;
+}
+
+#time {
+    position: fixed;
+    left: 25px;
+    right: 10px;
+    bottom: 0px;
+    width: 161px;
+    height: 80px;
+    margin: 0;
+    padding: 20px 0;
+    background-image: url(/image/clock.png);
+    text-align: center;
+    line-height: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: -50;
+}
+
+#time:hover{
+    transform: scale(1.1);
+}
+
+#fullScreen {
+    width: 90vw;
+    height: 90vh;
+    position: absolute;
+    z-index: 10;
+    background: rgba(43, 42, 42, 0.66);
+    color: white;
+    line-height: 30px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+#ok-content {
+    position: absolute;
+    background-color: rgb(187, 181, 181);
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 24px;
+    font-size: 25px;
+}
+
+#endTest {
+    bottom: 7px;
+    height: 64px;
+    width: 200px;
+    position: fixed;
+    left: 197px;
+    border: 2px solid black;
+}
+#endTest:hover{
+    transform: scale(1.1);
+}
+
+#googleForm {
+    position: fixed;
+    right: 0px;
+    width: 70vw;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+#doubt {
+    position: fixed;
+    bottom: 3px;
+    left: 5px;
+    height: 64px;
+    width: 194px;
+    border: 2px solid black;
+}
+#doubt:hover {
+    transform: scale(1.1);
+}
+
+#loading {
+    position: fixed;
+    top: 40%;
+    left: 45%;
+}
