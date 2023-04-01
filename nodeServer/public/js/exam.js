@@ -112,9 +112,8 @@ function startWebcam() {
 
 }
 
-function hideChecker() {
-
-    document.documentElement.webkitRequestFullscreen();
+function hideChecker(e) {
+    e.preventDefault();
     document.getElementById("test-Interface").removeChild(document.getElementById("fullScreen"));
     fullScreenMode = 0;
 

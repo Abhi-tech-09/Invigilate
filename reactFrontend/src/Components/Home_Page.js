@@ -25,9 +25,6 @@ export default function Home_Page() {
         position: "absolute", top: "50%", left: "34%", transform:
           "translate(-50%,-50%)"
       }}><img width="60%" src={exam} ></img></div>
-      <section />
-
-      <Cards />
       <Footer />
     </>
   )

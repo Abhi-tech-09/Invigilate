@@ -203,7 +203,7 @@ function Start(app, database, getDatabase, ref, onValue, set, refs, key) {
 }
 
 function StartTest() {
-    document.documentElement.webkitRequestFullscreen();
+    // document.documentElement.webkitRequestFullscreen();
     let str = `http://localhost:4000/Test/${globalRef.studentref}/${gloabalTestkey}`;
     window.location.href = str;
 

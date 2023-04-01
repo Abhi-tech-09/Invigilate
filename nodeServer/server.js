@@ -29,6 +29,10 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }))
 app.use(bodyParser.json({ limit: '50mb' }))
 
+app.get("/", (req,res) => {
+    res.send("Hey Welcome to Invigilate node Server")
+})
+
 let refs = "";
 app.post("/post", (req, res) => {
     res.setHeader("Content-type", "application/json");
@@ -66,18 +70,18 @@ app.post("/compare", (req, res) => {
 
 app.post("/detect", (req, res) => {
 
-    console.log("Came here")
-    let pic = req.body.picture;
-    dataURLtoFile(pic, 'object.jpg');
+    // console.log("Came here")
+    // let pic = req.body.picture;
+    // dataURLtoFile(pic, 'object.jpg');
 
-    const childPython = spawn('python', ['mobile.py', 'object.jpg']);
+    // const childPython = spawn('python', ['mobile.py', 'object.jpg']);
 
-    childPython.stdout.on('data', (data) => {
-        console.log(`stdout: ${data}`);
-        // console.log(typeof (data));
+    // childPython.stdout.on('data', (data) => {
+    //     console.log(`stdout: ${data}`);
+    //     // console.log(typeof (data));
         // console.log(`${data}`);
         res.status(200).json({ data: `${data}` });
-    });
+    // });
 
 })
 
